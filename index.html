@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind Project 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/185/PNG/512/ImageCapture_22703.png" type="image/x-icon">
+</head>
+<body>
+  <!-- small screen -->
+    <section class="one sm:hidden">
+    <div>
+            <div class="flex justify-start text-center text-xs">
+            <button
+              class=" absolute  text-white font-mono bg-green-400 hover:bg-gray-300 w-full hover:text-black text-[0.7rem]">
+              Download
+              <i class="fa-brands fa-android fa-1xl" style="color: #ffffff"></i>
+              <i class="fa-brands fa-apple fa-1xl" style="color: #ffffff"></i>
+              <i class="fa-brands fa-windows fa-1xl" style="color: #ffffff"></i>
+            </button>
+          </div>
+          <ul id="slider">
+            <li>
+            <!-- <li class="w-full"> -->
+              <img src="images/img1" alt=""  />
+        <div class="flex justify-end text-xs text-center">
+            <button onclick="next()" class="absolute text-white  bg-black hover:bg-gray-300 w-full  hover:text-black text-[0.7rem]">
+              Take Tour
+            </button>
+          </div>
+        </li>
+        <li>
+          <!-- <li class="w-full"> -->
+            <img src="images/img2" alt=""  />
+      <div class="flex justify-end text-xs text-center">
+          <button onclick="next()" class="absolute text-white  bg-black hover:bg-gray-300 w-full  hover:text-black text-[0.7rem]">
+            Take Tour
+          </button>
+        </div>
+      </li>
+      <li>
+        <!-- <li class="w-full"> -->
+          <img src="images/img3" alt=""  />
+    <div class="flex justify-end text-xs text-center">
+        <button onclick="next()" class="absolute text-white  bg-black hover:bg-gray-300 w-full  hover:text-black text-[0.7rem]">
+          Take Tour
+        </button>
+      </div>
+    </li>
+      </ul>
+        </div>
+    </section>
+    <!-- small screen end -->
+
+    <section class="">      
+      <div class="relative max-sm:hidden">
+        <div>
+          <ul id="slider1">
+            <li class="h-[100vh] relative ">
+              <img src="images/img1" alt="" class="w-full" />
+      
+        <div id = "container1" class="w-[35%] h-52 bg-black rounded-lg absolute right-58 top-[60%] opacity-70 hover:opacity-100 sm:-mt-[25%] sm:w-80 sm:h-36 xl:h-44 2xl:-mt-[7%] 2xl:ml-2">
+          <h1 class="text-white text-2xl text-center align-text-top py-5 sm:py-2">
+            Take photos with our app
+          </h1>
+          <p class="w-80 h-0.5 bg-slate-400 m-auto sm:w-72"></p>
+          <p class="text-white text-center py-4 sm:py-2">
+            Super simple installment: free of charge
+          </p>
+        </div>
+        <div class="absolute top-[83%] left-28 text-center sm:-mt-[28%] 2xl:-mt-[10%]">
+          <button
+            class="rounded-md py-2 px-4 text-white font-mono bg-green-400 hover:bg-gray-300 w-80 h-10 text-xl hover:text-black sm:-ml-24 sm:w-72">
+            Download
+            <i class="fa-brands fa-android fa-1xl" style="color: #ffffff"></i>
+            <i class="fa-brands fa-apple fa-1xl" style="color: #ffffff"></i>
+            <i class="fa-brands fa-windows fa-1xl" style="color: #ffffff"></i>
+          </button>
+            </li>
+            <li class="h-[100vh] relative hidden">
+              <li class="h-[100vh] relative ">
+                <img src="images/img2" alt="" class="w-full" />
+        
+          <div id = "container1" class="w-[35%] h-52 bg-black rounded-lg absolute right-58 top-[60%] opacity-70 hover:opacity-100 sm:-mt-[25%] sm:w-80 sm:h-36 xl:h-44 2xl:-mt-[7%] 2xl:ml-2">
+            <h1 class="text-red-500 text-2xl text-center align-text-top py-5 sm:py-2">
+              <strong>CLICK!</strong>Fast and Easy
+            </h1>
+            <p class="w-80 h-0.5 bg-slate-400 m-auto sm:w-72"></p>
+            <p class="text-white text-center py-4 sm:py-2">
+              Choose from thousands of features
+            </p>
+          </div>
+          <div class="absolute top-[83%] left-28 text-center sm:-mt-[28%] 2xl:-mt-[10%]">
+            <button
+              class="rounded-md py-2 px-4 text-white font-mono bg-red-500 hover:bg-gray-300 w-80 h-10 text-xl hover:text-black sm:-ml-24 sm:w-72">
+              Download
+              <i class="fa-brands fa-android fa-1xl" style="color: #ffffff"></i>
+              <i class="fa-brands fa-apple fa-1xl" style="color: #ffffff"></i>
+              <i class="fa-brands fa-windows fa-1xl" style="color: #ffffff"></i>
+            </button>
+              </li>
+            
+            <li class="h-[100vh] relative hidden">
+              <img src="images/img3" alt="" class="w-full">
+              <div id = "container1" class="w-[35%] h-52 bg-black rounded-lg absolute right-58 top-[60%] opacity-70 hover:opacity-100 sm:-mt-[25%] sm:w-80 sm:h-36 xl:h-44 2xl:-mt-[7%] 2xl:ml-2">
+                <h1 class="text-white text-2xl text-center align-text-top py-5 sm:py-2">Smart Design</h1>
+                <p class="w-80 h-0.5 bg-slate-400 m-auto sm:w-72"></p>
+                <p class="text-white text-center py-4 sm:py-2">
+                  Customize photos as you go
+                </p>
+              </div>
+              <div class="absolute top-[83%] left-28 text-center sm:-mt-[28%] 2xl:-mt-[10%]">
+                <button
+                  class="rounded-md py-2 px-4 text-white font-mono bg-blue-400 hover:bg-gray-300 w-80 h-10 text-xl hover:text-black sm:-ml-24 sm:w-72">
+                  Download
+                  <i class="fa-brands fa-android fa-1xl" style="color: #ffffff"></i>
+                  <i class="fa-brands fa-apple fa-1xl" style="color: #ffffff"></i>
+                  <i class="fa-brands fa-windows fa-1xl" style="color: #ffffff"></i>
+                </button>
+                  </li>
+          
+          </ul>
+        </div>
+        </div>       
+             
+                </div>
+        <div class="absolute px-5 flex h-[6vh] w-full top-0 left-0  ">
+                        </div>
+                    </div>
+                    <div class="flex justify-end mr-2 max-sm:hidden">
+                        <button onclick="next1()" class="absolute top-[83%] rounded-md text-white  bg-black hover:bg-gray-300
+                           w-30 h-10 text-xl hover:text-black py-2 px-4 sm:-mt-[28%] 2xl:-mt-[10%]">
+                          Take Tour
+                        </button>
+                      </div>
+                      
+        
+      </div>
+    </section>
+    
+    <!-- section one end -->
+
+          <section class="two">
+        <!-- <div class="flex flex-col md:flex-row">
+            <div class="ml-5 md:w-[60%]"> -->
+            <!-- <h1 class="text-black text-2xl font-bold mt-10">The App</h1>
+            <h3 class="text-green-500 text-xl font-semibold ">Why buy it?</h3>
+            <p class="text-[0.7rem]"><span class="font-semibold">Take photos like a pro.</span>You should buy this app because lorem ipsum consectetur adipiscing elit,
+               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> -->
+               
+               <!-- <h1 class="text-black  font-bold mt-10">The App</h1>
+               <h3 class="text-green-500  font-semibold ">Why buy it?</h3>
+               <p class=""><span class="font-semibold">Take photos like a pro.</span>You should buy this app because lorem ipsum consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> 
+   
+               <div class="flex justify-start w-[90%]">
+                <button class="absolute text-black bg-gray-200 hover:bg-gray-400
+                w-[70%]  flex justify-center hover:text-black text-[0.6rem]">
+                <i class="fa-solid fa-download fa-xs pt-2" style="color: #000000;"></i> Download Application
+                </button>
+              </div> 
+              <div>              
+                <p class="text-[0.7rem] ml-5 mt-5 pt-2">Available for
+               <i class="fa-brands fa-android fa-1xl" style="color: #68d480"></i>
+                 <i class="fa-brands fa-apple fa-1xl" style="color: #000000"></i>
+                 <i class="fa-brands fa-windows fa-1xl" style="color: #42b5f8"></i>
+           </p>
+       </div>-->
+       <div class="md:flex md:flex-row sm:mt-20">
+        <div class="mt-5 mx-2 sm:mx-3 md:mx-4 lg:mx-5 xl:mx-6 2xl:mx-7 md:mt-[5%]">
+            <h1 class="text-2xl font-bold sm:text-4xl md:6xl lg:text-8xl xl:text-10xl 2xl:text-12xl">The App</h1>
+            <h2 class="mx-1 mt-[2%] text-green-600 font-semibold text-base sm:text-lg md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-6xl">Why buy it?</h2>
+            <p class="text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl"><splash class="font-medium text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl mt-2">Take photos like a pro.</splash>You should buy this app because lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <button class=" hover:bg-gray-400 bg-gray-300 text-black text-xs py-[2%] w-36 sm:text-sm sm:w-44 md:text-lg md:w-60 lg:text-xl lg:w-58 xl:text-2xl xl:w-80 2xl:text-3xl 2xl:w-96"> <i class="fa-sharp fa-solid fa-download fa-xs"></i>Download Application</button>
+            <p class="text-xs py-[2%] sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">Available For <i class="fa-brands fa-android fa-xs" style="color: #12a546;"></i> <i class="fa-brands fa-apple fa-xs"></i> <i class="fa-brands fa-windows fa-xs" style="color: #0c5de9;"></i> </p>
+        </div>
+        <div class="flex-col border-[10px] rounded-xl border-gray-700 md:mt-[5%] sm:w-[50%] sm:m-auto">
+          <img src="images/img1" alt="err" class="w-full"/>
+          <img src="images/img6.JPG" alt="err" class="w-full"/>
+      </div>
+      <!-- <div class="flex-col border-[10px] rounded-xl border-gray-700 md:mt-[5%]">
+        <img src="images/img1" alt="err"/>
+        <img src="images/img6.JPG" alt="err" />
+    </div> -->
+        </div>
+        
+    </div>
+        </section> 
+        
+        <section  class="three"> 
+        <div class="flex md:flex-row bg-slate-200 mt-5 md:w-[98%]">
+        <!-- <div class="w-full mt-4 md:mt-[5%]">
+          <img src="images/img4" alt="">
+        </div>  -->
+        <div class="w-full max-md:hidden md:w-[30%]">
+          <img src="https://images.unsplash.com/photo-1541771286675-f03c9d49ecfb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt="">
+        </div>
+        <div class="w-[100%] md:w-[70%] md:ml-4 md:mt-4">
+        <h1 class="text-2xl font-bold sm:text-4xl md:6xl lg:text-8xl xl:text-10xl 2xl:text-12xl ">Clarity</h1>
+        <h3 class="mx-1 mt-[2%] text-red-500 font-semibold text-base sm:text-lg md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-6xl">Pixels, who?</h3>
+        <p><span class="font-semibold">A revolution in resolution.</span> 
+          Sharp and clear photos with the world's best photo engine, 
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>            </div>
+  
+        </section>
+                <!-- ........................section four start........................ -->
+
+                <section class="four">
+            <div class=" bg-gray-600 w-full xl:h-[120vh] sm:h-[70vh] lg:h-[95vh]">
+              <div class="p-10 text-white">
+                  <h1 class="flex justify-center font-bold text-2xl sm:text-4xl md:6xl lg:text-8xl xl:text-10xl 2xl:text-12xl">Features</h1>
+                  <p class="flex justify-center text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl">This app is just so lorem ipsum.</p>
+                  <div class="flex justify-around mt-10 sm:text-xl md:text-3xl lg:text-4xl xl:text-3xl 2xl:text-5xl  2xl:mt-[5%] xl:mt-[10%] sm:mt-[10%]">
+                      <i class="fa-solid fa-bolt-lightning 2xl:stroke-2" style="color: #e7970d;"></i>
+                      <i class="fa-solid fa-heart  " style="color: #db1a1a;"></i>
+                      <i class="fa-solid fa-camera " style="color: #ffd91a;"></i>
+                      <i class="fa-sharp fa-solid fa-battery-full" style="color: #63bd0a;"></i>
+                      </div>
+                      <div class="flex justify-around text-white sm:text-xl md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 2xl:mt-[2%] xl:mt-[2%]">
+                          <p>Fast</p>
+                          <p>Loved</p>
+                          <p>Clarity</p>
+                          <p>Power</p>
+                      </div>
+                      <div class="flex justify-around mt-10 sm:text-xl md:text-3xl lg:text-4xl xl:text-3xl 2xl:text-5xl  2xl:mt-[5%] xl:mt-[10%] sm:mt-[10%]">
+                          <i class="fa-sharp fa-regular fa-gem " style="color: #ffffff;"></i>
+                          <i class="fa-solid fa-cloud " style="color: #417ce1;"></i>
+                          <i class="fa-solid fa-earth-americas " style="color: #e2d003;"></i>
+                          <i class="fa-regular fa-hard-drive " style="color: #3675e2;"></i>
+                  </div>
+                      <div class="flex justify-around text-white sm:text-xl md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 2xl:mt-[2%] xl:mt-[2%]">
+                          <p>Sharp</p>
+                          <p class="2xl:ml-[2%] xl:ml-[2%]">cloud</p>
+                          <p class="2xl:ml-[2%] xl:ml-[2%]">Global</p>
+                          <p>Storage</p>
+                      </div>
+                      <div class="flex justify-around mt-10 sm:text-xl md:text-3xl lg:text-4xl xl:text-3xl 2xl:text-5xl  2xl:mt-[5%] xl:mt-[10%]  sm:mt-[10%]">
+                          <i class="fa-solid fa-user fa-xs" style="color: #ffffff;"></i>
+                          <i class="fa-solid fa-shield-halved fa-xs" style="color: #b8a800;"></i>
+                          <i class="fa-sharp fa-solid fa-wifi fa-xs" style="color: #bababa;"></i>
+                          <i class="fa-solid fa-image fa-xs" style="color: #f74545;"></i>
+                      </div>
+                      <div class="flex justify-around text-white sm:text-2xl sm:mt-[2%] md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 2xl:mt-[2%] xl:mt-[2%]">
+                          <p class="2xl:ml-[2%] xl:ml-[2%]">Safe</p>
+                          <p class="2xl:ml-[2%] xl:ml-[2%]">Stabile</p>
+                          <p class="2xl:mr-[2%] xl:mr-[2%]">Connected</p>
+                          <p class="2xl:mr-[2%] xl:mr-[2%] sm:mr-[2%]">HD</p>
+              </div>
+              </div>
+          </div>
+            <!-- <i class="fa-solid fa-bolt" style="color: #ff7b00;">bolt</i>
+            <i class="fa-sharp fa-solid fa-heart" style="color: #ff0000;"></i>
+          <i class="fa-solid fa-camera" style="color: #f3d568;"></i>
+        <i class="fa-regular fa-battery-full" style="color: #33e156;"></i>
+      <i class="fa-regular fa-gem" style="color: #fcfcfd;"></i>
+    <i class="fa-solid fa-cloud" style="color: #0091ff;"></i>
+  <i class="fa-solid fa-earth-americas" style="color: #f58f00;"></i>
+<i class="fa-regular fa-hard-drive" style="color: #005eff;"></i>
+<i class="fa-solid fa-user" style="color: #ffffff;"></i>
+<i class="fa-solid fa-shield-halved" style="color: #ff9500;"></i>
+<i class="fa-solid fa-wifi" style="color: #e9eef7;"></i>
+<i class="fa-solid fa-wifi" style="color: #e9eef7;"></i>
+<i class="fa-solid fa-image" style="color: #ee1b77;"></i> -->
+          </div>
+        </section>
+          
+                <!-- ........................section four end........................ -->
+
+                
+                <!-- ........................section five start........................ -->
+                <section>
+        <div class="">
+          <h1 class="mt-28 flex justify-center lg:text-2xl xl:text-4xl 2xl:text-6xl font-bold  text-black">Pricing</h1>
+              <p class="flex justify-center lg:text-2xl xl:text-3xl 2xl:text-4xl font-normal  text-black">Choose a pricing plan that fits your needs.</p>
+      </div>
+      <div class="flex flex-wrap gap-4 justify-between sm:gap-0 text-center lg:text-2xl p-5">
+          <div class="w-full sm:w-[50%] bg-white hover:shadow-2xl shadow-xl p-4 ">
+              <h1 class="bg-slate-500 text-white p-10">Basics</h1>
+              <p><b>250</b> photos</p>
+              <hr class="w-full h-px bg-gray-200 my-10">
+              <p><b>10</b> Features</p>
+              <hr class="w-full h-px bg-gray-200 my-10">
+              <p><b>No</b> Ads</p>
+              <hr class="w-full h-px bg-gray-200 my-10">
+              <p><b>Office Hours</b> Supports</p>
+              <hr class="w-full h-px bg-gray-200 my-10">
+              <p class="text-gray-500 text-xl lg:text-2xl">$ 25</p>
+              <p class="bg-gray-300">
+                  <button class="bg-black text-white  lg:text-2xl my-14 hover:bg-gray-500 hover:text-black py-1 px-4">
+                      <i class="fa-sharp fa-solid fa-download" style="color: #ffffff;"></i> Download
+                  </button>
+              </p>
+          </div>
+      
+          <div class="w-full sm:w-[50%] bg-white hover:shadow-2xl shadow-xl p-4">
+              <h1 class="bg-red-500 text-white p-10">Premium</h1>
+              <p><b>1000</b> photos</p>
+              <hr class="w-full h-px bg-gray-200 my-10">
+              <p><b>50</b> Features</p>
+              <hr class="w-full h-px bg-gray-200 my-10">
+              <p><b>No</b> Ads</p>
+              <hr class="w-full h-px bg-gray-200 my-10">
+              <p><b>Endless</b> Supports</p>
+              <hr class="w-full h-px bg-gray-200 my-10">
+              <p class="text-gray-500 text-xl lg:text-2xl">$ 99</p>
+              <p class="bg-gray-300">
+                  <button class="bg-black text-white my-14 hover:bg-gray-500 hover:text-black py-1 px-4">
+                      <i class="fa-sharp fa-solid fa-download" style="color: #ffffff;"></i> Download
+                  </button>
+              </p>
+          </div>
+      </div>
+    </section>
+      <section>
+      <div class="mt-52 bg-gray-300 w-full md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">
+          <div class="flex justify-center space-x-2">
+              <i class="fa-brands fa-facebook my-4"></i>
+              <i class="fa-brands fa-instagram my-4"></i>
+              <i class="fa-brands fa-square-snapchat my-4"></i>
+              <i class="fa-brands fa-pinterest-p my-4"></i>
+              <i class="fa-brands fa-twitter my-4"></i>
+              <i class="fa-brands fa-linkedin-in my-4"></i>
+          </div>
+         
+      </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
